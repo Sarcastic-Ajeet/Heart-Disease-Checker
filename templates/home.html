@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <div class="login">
+            <h1>  10 year risk of coronary heart disease CHD </h1>
+            <!-- Main Input For Receiving Query to our ML -->
+            <form action="/predicted" method="post">
+                <input type="text" name="male" placeholder="male" required="required" /><br>
+                <input type="text" name="age" placeholder="age" required="required" /><br>
+                <input type="text" name="education" placeholder="education" required="required" /><br>
+                <input type="text" name="currentSmoker" placeholder="currentSmoker" required="required" /><br>
+                <input type="text" name="cigsPerDay" placeholder="cigsPerDay" required="required" /><br>
+                <input type="text" name="BPMeds" placeholder="BPMeds" required="required" /><br>
+                <input type="text" name="prevalentStroke" placeholder="prevalentStroke" required="required" /><br>
+                <input type="text" name="prevalentHyp" placeholder="prevalentHyp" required="required" /><br>
+                <input type="text" name="diabetes" placeholder="diabetes" required="required" /><br>
+                <input type="text" name="totChol" placeholder="totChol" required="required" /><br>
+                <input type="text" name="sysBP" placeholder="sysBP" required="required" /><br>
+                <input type="text" name="diaBP" placeholder="diaBP" required="required" /><br>
+                <input type="text" name="BMI" placeholder="BMI" required="required" /><br>
+                <input type="text" name="heartRate" placeholder="heartRate" required="required" /><br>
+                <input type="text" name="glucose" placeholder="glucose" required="required" /><br>
+
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+            
+
+
+        <h2>
+            your result {{results}}
+        
+         </h2> 
+    </body>
+</html>
